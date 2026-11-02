@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #263445;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    background: #172b4d;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h2 {
+    font-size: 23px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #75c7ff;
+}
+
+.hero {
+    min-height: 400px;
+    padding: 90px 8%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #17365d, #2878a8);
+    color: white;
+}
+
+.hero h1 {
+    max-width: 700px;
+    font-size: 42px;
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.hero p {
+    max-width: 600px;
+    margin-bottom: 22px;
+}
+
+.tag {
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.button {
+    display: inline-block;
+    background: white;
+    color: #17365d;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #17365d;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.section > p {
+    max-width: 750px;
+    margin: auto;
+}
+
+.alternate {
+    background: #f2f6fb;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.card h3 {
+    color: #2878a8;
+    margin-bottom: 12px;
+}
+
+footer {
+    background: #172b4d;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 31px;
+    }
+}
